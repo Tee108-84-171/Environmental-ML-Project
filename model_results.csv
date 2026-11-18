@@ -1,0 +1,19 @@
+target,model,R2,RMSE,MAE,sec,params
+permeate_flow_m3h,Linear,0.9290531634902033,0.39554882344879094,0.30366982673512616,0.0,{}
+permeate_flow_m3h,RandomForest,0.9989324067523497,0.04852175365508118,0.032428889692027354,22.8,"{'n_estimators': 100, 'min_samples_leaf': 1, 'max_depth': 20}"
+permeate_flow_m3h,XGBoost,0.9996994011563214,0.02574703552647663,0.01901505228282876,3.2,"{'n_estimators': 200, 'max_depth': 8, 'learning_rate': 0.05}"
+permeate_flow_m3h,LightGBM,0.9996285903929653,0.028619375051981907,0.021489078444084653,2.7,"{'num_leaves': 63, 'n_estimators': 200, 'learning_rate': 0.05}"
+permeate_flow_m3h,CatBoost,0.9999066534533834,0.014347713875232336,0.011116860010521007,7.3,"{'learning_rate': 0.2, 'iterations': 300, 'depth': 8}"
+permeate_flow_m3h,ANN(MLP),0.9996521563313437,0.027696547194832555,0.021436037214292505,19.7,"{'mlpregressor__hidden_layer_sizes': (128, 64), 'mlpregressor__alpha': 0.0001}"
+permeate_salinity_gL,Linear,0.8282265194426459,0.060511444226779176,0.033235123243320466,0.0,{}
+permeate_salinity_gL,RandomForest,0.9964701162824978,0.008674404299633188,0.004472669823905027,21.3,"{'n_estimators': 100, 'min_samples_leaf': 1, 'max_depth': None}"
+permeate_salinity_gL,XGBoost,0.9991188555232849,0.004333941273649751,0.002312241480139757,3.3,"{'n_estimators': 200, 'max_depth': 8, 'learning_rate': 0.05}"
+permeate_salinity_gL,LightGBM,0.9985258033041919,0.005605794553519145,0.002403962317408897,2.7,"{'num_leaves': 63, 'n_estimators': 200, 'learning_rate': 0.05}"
+permeate_salinity_gL,CatBoost,0.9998434483357378,0.0018267886514492721,0.0008228274003768589,7.5,"{'learning_rate': 0.2, 'iterations': 300, 'depth': 8}"
+permeate_salinity_gL,ANN(MLP),0.9978241123129498,0.006810479622840231,0.002843851510827583,25.7,"{'mlpregressor__hidden_layer_sizes': (128, 64), 'mlpregressor__alpha': 0.0001}"
+SEC_kWh_m3,Linear,0.8144316005902615,1.294872949390365,0.6609338584101091,0.0,{}
+SEC_kWh_m3,RandomForest,0.9955671949854827,0.20013104432611217,0.08880231764517643,23.4,"{'n_estimators': 100, 'min_samples_leaf': 1, 'max_depth': 20}"
+SEC_kWh_m3,XGBoost,0.9992390197179829,0.08292048799459126,0.052012636742080995,2.9,"{'n_estimators': 200, 'max_depth': 6, 'learning_rate': 0.2}"
+SEC_kWh_m3,LightGBM,0.9992343824856514,0.08317275310535699,0.04912355932536141,2.8,"{'num_leaves': 63, 'n_estimators': 200, 'learning_rate': 0.05}"
+SEC_kWh_m3,CatBoost,0.9998956814105334,0.030701245925368922,0.017007337223388447,7.3,"{'learning_rate': 0.2, 'iterations': 300, 'depth': 8}"
+SEC_kWh_m3,ANN(MLP),0.9967940591160034,0.17019739255511163,0.05518178302486522,34.7,"{'mlpregressor__hidden_layer_sizes': (128, 64), 'mlpregressor__alpha': 0.001}"
