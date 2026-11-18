@@ -1,9 +1,7 @@
-# Environmental-ML-Project
-
 # ML surrogate for seawater RO (SWRO) — industrial water for a power plant, Krabi
 
 ## Environmental problem
-Producing ASTM Type II industrial water from seawater (Nuea Khlong, Krabi: TS ≈ 34,972 mg/L, 30.2 ppt, 39 °C) relies on SWRO as the main desalination step. SWRO performance (permeate flow, permeate salinity) and energy use (SEC) depend non-linearly on feed flow, temperature, salinity and pressure.
+Producing ASTM Type II industrial water from seawater (Nuea Khlong, Krabi: TS ≈ 34,972 mg/L, 30.2 ppt, 39 °C) relies on SWRO as the main desalination step. SWRO performance (permeate flow, permeate salinity) and energy use (SEC) depend non-linearly on feed flow, temperature, salinity and pressure. Linked to course 2107314 (Project 3).
 
 ## Dataset source
 **Simulated**, not measured: 18,816 scenarios from a simplified solution–diffusion model (`notebooks/swro_sim.py`), one pressure vessel × 7 elements, following the grid of Daaboub et al. (2024), *Enhancing Seawater RO Desalination Efficiency Using Digital Twins and ML*, FAIA 386 (doi:10.3233/FAIA240403). Membrane parameters (A, B, k) are assumed values, not vendor data. Ranges: feed flow 5–17 m³/h, T 10–40 °C, salinity 30–44 g/L, pressure 40–80 bar.
